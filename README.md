@@ -26,13 +26,21 @@
 > * `uniqueStrings` - Write a function which receives an array of strings. It should return an array of unique strings from the input array
 > * `developer` - Write a function a constructor called `Developer` which receives 2 parameters an input string containing name and an array of programming languages the developer knows
 > * `inherit` - using prototypal inheritance add a function called learn language, which accepts a new language in string format and adds it to array of programming languages the developer knows. The values in array should be unique
-> * `garden` - create a constructor called Garden. It should receive an object as input which contains names of plants as keys and numbers as corresponding quantities as values
+> * `garden` - create a constructor called Garden. It should receive an object as input which contains names of plants as keys and numbers as corresponding quantities as values. We want to set each plant name as a key on our new object and the quantity as corresponding value.
+> ```js
+> // plants
+> {
+>   roses: 10,
+>   carnations: 13,
+>   tulips: 7
+> }
+> ```
 > * `extend` - using prototypal inheritance add a method called `plant` which receives an object of plants and corresponding quantities as keys and adds them to current stock
-> * `harvest` - using prototypal inheritance add a method called harvest to garden. It should receive and object which contains plant names as keys and quantities to harvest as values. Reduce the quantity of existing plants in garden by the number of plants to be harvested. If number of certain plant falls to 0 or below. Remove key from corresponding object
+> * `harvest` - using prototypal inheritance add a method called harvest to Garden. It should receive and object which contains plant names as keys and quantities to harvest as values. Reduce the quantity of existing plants in garden by the number of plants to be harvested. If number of certain plant falls to 0 or below. Remove the corresponding key from object
 > * `stringsConcat` - Write a function which receives an array of strings and numbers. The function should concatenate all strings and return the resulting string.
 > * `negativeOnly` - Write a function which receives one array of positive and negative numbers. It should return an array containing only the negative numbers
 > * `camelise` - Write a function which receive a string of lower case, space separated words. It should convert the string to camel case. That is capitalise the first letter of every word except the first and remove all spaces
-> * `merging` - Write a function which receives an array of objects. It should merge them into a single object. The objects with fewest values should take precedence over objects with fewer values. The input objects should remain unaffected, by the merge. For example input `[{a: 5}, {a: 3, b: 21, c:32}]` to `{a:5, b:21, c:32}`
+> * `merging` - Write a function which receives an array of objects. It should merge them into a single object. The objects with fewer values should take precedence over objects with more values. The input objects should remain unaffected, by the merge. For example input `[{a: 5}, {a: 3, b: 21, c:32}]` to `{a:5, b:21, c:32}`
 > * `possibleValues` - Write a function which receives an array of objects. Your function should output an object which contains all the keys from input objects. The corresponding value of each key should be an array which contains a list of all values the corresponding key had in all input objects. Values should be unique. For example `[{a: 5}, {a: 3, b: 21, c:32}, {a: 3, c:32}]` to `{a:[5,3], b:[21], c:[32]}`
 > * `isPrime` - Write a function which receives an integer an returns `true` if the input is a prime number, `false` otherwise
 > * `walkabout` - write a constructor called Walker. It should receive one parameter, a string which is either 'N', 'S', 'E' or 'W' which indicates the direction the walker is facing. Walker's initial coordinates should be (0,0), where the first coordinate represents the x coordinate (horizontal) and the second coordinate represents y coordinate (vertical).
