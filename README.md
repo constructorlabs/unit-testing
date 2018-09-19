@@ -1,14 +1,13 @@
-> **Pair programming**
->
-> * Fork and clone repo this repo
-> * run `npm install` after cloning to download external dependencies
-> * Write a solution to each exercise and a corresponding test which ensures correctness of solution
-> * Try to write the test before writing the solution. This will force you to think closely about the task
-> * One person should be writing the test and another the solution. Alternate roles after each exercise
-> * Create at least two test for each question to cover different inputs and outputs
-> * Run `npm test` regularly to ensure your tests pass
-> * To run all tests in the background continuously you can do so using `npm test -- --watchAll`
+**Pair programming**
 
+* Fork and clone repo at this repo
+* run `npm install` after cloning to download external dependencies
+* Write a solution to each exercise and a corresponding test which ensures correctness of solution
+* Try to write the test before writing the solution. This will force you to think closely about the task
+* One person should be writing the test and another the solution. Alternate roles after each exercise
+* Create at least two test for each question to cover different inputs and outputs
+* Run `npm test` regularly to ensure your tests pass
+* To run all tests in the background continuously you can do so using `npm test -- --watchAll`
 
 > **Exercises**
 >
@@ -35,6 +34,8 @@
 > **Stretch goals**
 >
 > * `isPrime` - Write a function which receives an integer an returns `true` if the input is a prime number, `false` otherwise
-> * `walkabout` - create a constructor called `Walker`. Walker's initial coordinates should be (0,0), where the first coordinate represents the x coordinate (horizontal) and the second coordinate represents y coordinate (vertical).
-> * Add a `walk` method to `Walker` using its prototype which accepts a direction as a string and a number representing the number of steps to be taken. When called the walker should update its coordinates and add the move made to its journey history. The journey history should be stored using coordinates representing the location at the end of each move.
+> * `walkabout` - create a constructor called `Walker`. Walker should have one property an array called `journey`, which will store the journey taken. The last item in the `journey` array represents the current location. The coordinates should be stored as `x` ( horizontal) first and `y` (vertical) second. The initial location should be [0,0].
+> * Add a `walk` method to `Walker` using its prototype which accepts a direction as a string `N`, `S`, `E`, `W` and a number representing the number of steps to be taken. When called the walker should add the move made to its `journey` history. A step in `N` direction should increase the `y` coordinate. A step in `S` direction should decrease the `y` coordinate. A step in `W` direction should increase the `x` coordinate. A step in `E` direction should decrease the `x` coordinate
+> * Add a `currentLocation` method to `Walker` using its prototype. It should return current location of the walker.
 > * Add a `pathTaken` method to `Walker` using its prototype. It should output the journey taken taken as a list of coordinates
+> * Add a `totalSteps` method to `Walker` using its prototype. It should output total steps walked
